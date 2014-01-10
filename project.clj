@@ -8,7 +8,7 @@
                  [ch.qos.logback/logback-classic "1.0.13"]
                  [org.clojure/data.codec "0.1.0"]
                  [clj-scribe "0.3.1"]
-                 [byte-streams "0.1.6"] 
+                 [byte-streams "0.1.6"]
                  [clj-time "0.6.0"]]
   :test-paths ["test" "examples"]
   :profiles {:dev {:dependencies [[ring-mock "0.1.5"]

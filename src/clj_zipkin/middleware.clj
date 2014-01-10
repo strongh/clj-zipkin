@@ -10,10 +10,9 @@
                 :span-id sid
                 :parent-span-id pid
                 :span (str (:request-method request) ":" (:uri request))
-                :host (or (:host config) 
-                          (when (:service config) 
+                :host (or (:host config)
+                          (when (:service config)
                             {:service (:service config)}))
                 :scribe (:scribe config)}
-               (handler (assoc request :zipkin {:trace-id tid 
+               (handler (assoc request :zipkin {:trace-id tid
                                                 :span-id sid}))))))
-
