@@ -14,7 +14,7 @@ Tracing a code chunk
 
 ```clojure
 
-(:require [clj-zipkin.tracer :as t)
+(:require [clj-zipkin.tracer :as t])
 
 (t/trace {:host "10.2.1.2" :span "GET" :scribe {:host "zipkin.host" :port 9410}}
          (..code..))
