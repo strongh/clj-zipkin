@@ -15,4 +15,5 @@
                                   [ring "1.2.1"]]}}
   :plugins [[lein-thriftc "0.1.0"]]
   :prep-tasks ["thriftc"]
+  :thriftc {:javac-opts ["-source" "1.6" "-target" "1.6"]}
   :javac-options ["-Xlint:unchecked"])
