@@ -3,7 +3,6 @@
             [clojure.data.codec.base64 :as b64]
             [clj-scribe :as scribe]
             [thrift-clj.gen.core :as c]
-            [byte-streams]
             [clj-time.core :as time]
             [clj-time.coerce :as time-coerce]))
 
